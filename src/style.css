@@ -1,3 +1,50 @@
+/* Estilo página 1 */
+
+#btn-adm, #btn-student{
+  margin: 5%;
+  position: left;
+}
+
+
+/* Estilo para página 2 */
+#sect1, #sect2 {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.container {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  padding: 5%;
+
+}
+
+#imgLogo {
+  width: 100%;
+  margin: 0 auto 8px;
+  display: block;
+  max-width: 200px;
+}
+
+.form-control {
+  background-color: rgb(250, 255, 189);
+}
+
+.btn-primary {
+  color: black;
+  font-weight: bold;
+  background-color: #ffc107;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 0;
+}
+#page2 {
+font-family: museo-sans, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+/* Fin estilo página 2*/
+
+/* Inicio estilo página inicio (index.html)*/
 .col-sm-3{
   background-color: white;
 }
@@ -14,17 +61,20 @@ h1{
 body,html{
     height: 100%;
 }
+.bg-light {
+    background-color: #f8f9fa05!important;
+}
 .home{
    background-color: #6c757d14;
 }
 
-.home a{
+/*.home a{
   color: black;
   display: inline;
-  /*padding: 2%;*/
+  padding: 2%;
   margin: 0%;
   text-decoration: none;
-}
+}*/
 .home a:hover{
   background-color: #ffc107;
 }
@@ -36,10 +86,12 @@ li{
   list-style-type: none;
   font-family: 'Song Myung',serif;
   font-size: 35px;
-  padding: 8%;
+  padding: 5%;
 }
 .menu{
   padding: 2em;
     color: #6c757d;
     font-size: larger;
 }
+
+/*Fin estilo página inicio (index.html)

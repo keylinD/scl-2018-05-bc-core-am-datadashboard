@@ -1,6 +1,5 @@
 // 1) `computeUsersStats(users, progress, courses)`
 window.computeUsersStats = (users, progress, courses) => {
-
 };
 // 2) `sortUsers(users, orderBy, orderDirection)`
 window.sortUsers = (users, orderBy, orderDirection) => {
@@ -14,3 +13,5 @@ window.filterUsers = (users, search) => {
 window.processCohortData = (options) => {
 
 };
+
+

@@ -26,6 +26,7 @@
       </div>
     </div> 
     <!-- fin de logo y texto -->
+
     <!-- Inicio menú -->
       <div class="row">
       <div class="col-3 home">
@@ -40,57 +41,66 @@
         <hr>
         <li><i class="icon fas fa-sign-out-alt"><a href="#" class="close"> Cerrar Sesión </a></i></li>
       </div>
+
+     <!-- Inicio menú -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light home">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"></a>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <i class="icon far fa-user">
+          <a class="nav-link" href="#"> Valentina Smith</a>
+        </i>
+      </li>
+      <li class="nav-item active">
+        <i class="icon fas fa-home" >
+          <a class="nav-link" href="#">Inicio</a>
+        </i>
+      </li>
+      <!-- <li class="nav-item active">
+        <i class="icon fas fa-book-open">
+          <a class="nav-link " href="#">Cohorts</a>
+        </i>
+      </li> -->
+      <li class="nav-item active">
+        <i class="icon fas fa-cog">
+          <a class="nav-link " href="#">Configuación</a>
+        </i>
+      </li>
+      <li class="nav-item active">
+        <i class="icon fas fa-sign-out-alt">
+          <a class="nav-link " href="#">Cerrar Sesión</a>
+        </i>
+      </li>
+    </ul>
+  </div>
+</nav>
       <!-- fin del menú -->
       <!-- inicio de los botones -->
-      <div class="col-9 menu">Cohorts
+      <div class="col-9 menu">
+        <section class="form-group" id="CohortsAlum">
+          <label for="exampleFormControlSelect1">Cohorts</label>
+          <select class="form-control" id="nameCohorts">
+          <option id="optionCohorts">Cohorts</option>
+        </select>
+
+        </section>
       <hr>
       <!-- lista despegable -->
       <section class="form-group">
-        <label for="exampleFormControlSelect1">Lista de Alumnas</label>
-        <select class="form-control" id="nameAlum ">
-          <option id="optionAlum" value="cargar_alumnas()">Alumnas</option>
-          <!-- <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option> -->
+        <label for="exampleFormControlSelect1">Listado de Alumnas</label>
+        <select class="form-control" id="nameAlumna" >
+          <option id= "optionAlumna">ALUMNAS</option>
         </select>
-      </section>
-        <div class="col-6 per">
-          <p>PERU - LIMA</p>
-          <form class="search-form">
-            <input class="search" type="text" placeholder="Buscar" size="15" id='buscarAlum'>
-            <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
-          </form>
+        <div class="container">
+          <div id="list" class="row"></div>
         </div>
-        <div class="col-6">
-          <p>CHILE - SANTIAGO</p>
-          <form class="form-inline justify-content-left">
-            <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
-            <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
-          </form>
-        </div>
-        <div class="col-6">
-          <p>México - Ciudad de México</p>
-          <form class="form-inline justify-content-left">
-            <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
-            <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
-          </form>
-        </div>
-        <div class="col-6">
-          <p> MÉXICO - GUADALAJARA</p>
-          <form class="form-inline justify-content-left">
-            <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
-            <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
-          </form>
-        </div>
-        <div class="col-6">
-          <p>BRASIL - SAO PAULO</p>
-          <form class="form-inline justify-content-left">
-            <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
-            <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
-          </form>
-        </div>
-      </div>
+</section>
+        
       <!-- fin del col-9 -->
     </div>
     <!-- fin del col-3 -->

@@ -1,0 +1,56 @@
+const userJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
+const userCOHORTS = '../data/cohorts.json';
+const listCohorts = document.getElementById('nameCohorts');
+const lista = document.getElementById('nameAlumna');
+const container = document.getElementById('list');
+
+// ----Cohorts--
+fetch(userCOHORTS)
+.then(response => response.json())
+.then(data => {
+  console.log(data);
+  renderCohorts(data);
+})
+
+const renderCohorts = data => {
+  listCohorts.addEventListener('click', () => {
+    const render = data.forEach(element => { 
+      let option = document.createElement('option');
+      option.text=element.id;
+      return listCohorts.add(option);
+    })
+  })
+}
+// ---Alumas---
+ fetch(userJSON)
+ .then(response => response.json())
+ .then(data =>{
+ 	console.log(data);
+ 	renderUsers(data);
+ })
+
+ const renderUsers = data =>{ 
+ 	lista.addEventListener('click',()=>{
+ 		const render = data.forEach(element =>{
+ 			let option = document.createElement("option");
+ 			option.text=element.name;
+ 			return lista.add(option);
+ 		})
+ 	return render;
+ 	});
+ }
+
+// fetch(userJSON)
+// .then(response => response.json())
+// .then(data=>{
+//   console.log(data);
+//   listUsers(data);
+// })
+
+// const listUsers = data => {
+//   lista.addEventListener('click' , () => {
+//     const render = data.forEach(element => {
+//       return container.innerHTML +=  `<div class="col-lg-4 col-sm-6 col-xs-12">${element.name}</div>`
+//     })
+//   })
+// }

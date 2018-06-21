@@ -56,22 +56,3 @@ const renderCohorts = data => {
 //   })
 // }
 
-window.onload = function() { 
-		
-	animateprogress("#html5",);
-	animateprogress("#php",);
-	animateprogress("#css",);
-	animateprogress("#python",);
-	animateprogress("#javascript",);
-	animateprogress("#nodejs",);
-	
-} 	
-document.getElementById ("bototnReload").addEventListener ("click", function() { 
-	animateprogress("#html5",);
-	animateprogress("#php",);
-	animateprogress("#css",);
-	animateprogress("#python",);
-	animateprogress("#javascript",);
-	animateprogress("#nodejs",);
- 
-});

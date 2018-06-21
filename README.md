@@ -41,7 +41,7 @@ Cabe mencionar que, debido a que la funcionalidad pueda cambiar algunas cosas, e
 
   4- Luego de ingresar a la barra de búsqueda aparecerá una página con una barra lateral izquierda, donde aparecerá la foto y nombre de la alumna, debajo de la foto un menú con las habilidades (soft skills y tech skills), observaciones y asistencia. En la pantalla principal de la alumna aparecerán sus habilidades de autogestión y de relaciones interpersonales como pestañas desplegables para poder ver en detalle sus auto evaluaciones, las evaluaciones de sus compañeras y de sus couch. Y en la parte superior,al lado de la foto aparecerá un ranking que indicará su puesto respecto a sus demás compañeras del bootcamp, tomando en cuenta su progreso.
 
-  ![Github Logo](../src/img/prototype(3).jpeg)
+  ![Github Logo](src/assets/img/prototype(3).jpeg)
 
 
   5- Al hacer click en Tech skills aparecerá un gráfico que indique un resumen de progreso de las materias que han pasado en el bootcamp (html, javascript, css, etc.) y al lado derecho del gráfico de barras aparecerá un gráfico tipo torta que indicará el porcentaje de completitud de los quiz, lecturas, ejercicios y retos.

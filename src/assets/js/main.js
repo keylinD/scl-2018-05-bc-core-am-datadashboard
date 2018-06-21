@@ -4,6 +4,7 @@ const listCohorts = document.getElementById('nameCohorts');
 const lista = document.getElementById('nameAlumna');
 const container = document.getElementById('list');
 
+
 // ----Cohorts--
 fetch(userCOHORTS)
 .then(response => response.json())
@@ -21,7 +22,7 @@ const renderCohorts = data => {
     })
   })
 }
-// ---Alumas---
+// ---Alumnas---
  fetch(userJSON)
  .then(response => response.json())
  .then(data =>{
@@ -54,3 +55,23 @@ const renderCohorts = data => {
 //     })
 //   })
 // }
+
+window.onload = function() { 
+		
+	animateprogress("#html5",);
+	animateprogress("#php",);
+	animateprogress("#css",);
+	animateprogress("#python",);
+	animateprogress("#javascript",);
+	animateprogress("#nodejs",);
+	
+} 	
+document.getElementById ("bototnReload").addEventListener ("click", function() { 
+	animateprogress("#html5",);
+	animateprogress("#php",);
+	animateprogress("#css",);
+	animateprogress("#python",);
+	animateprogress("#javascript",);
+	animateprogress("#nodejs",);
+ 
+});

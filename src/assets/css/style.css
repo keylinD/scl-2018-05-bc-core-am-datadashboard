@@ -6,41 +6,62 @@
 }
 
 
-/* Estilo para página 2 */
+/* Estilo página 2 */
 #sect1, #sect2 {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
   background-color: #fafafa;
+  font-size: 1rem;
+  font-family: museo-sans, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* Sombreando borde container*/
 .container {
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
   padding: 5%;
-
 }
 
-#imgLogo {
+#imgLogo, #imgPage2{
   width: 100%;
   margin: 0 auto 8px;
   display: block;
   max-width: 200px;
 }
 
-.form-control {
+/* Estilo inputs*/
+.form-control, .custom-select {
   background-color: rgb(250, 255, 189);
+  border-radius: 0;  
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom-color: black;
 }
 
+/* Estilo botones*/
 .btn-primary {
   color: black;
   font-weight: bold;
   background-color: #ffc107;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
   border: none;
+  border-radius: 0;  
+}
+
+/* Aplicando estilo de sombreado cuando el mouse se posa sobre el botón*/
+.btn-primary:hover {
+  font-weight: bold;
+  color: black;
+  background-color: #ff8507;
+  border: none;
+  transition-duration: 1s;
+  cursor: pointer;
   border-radius: 0;
 }
-#page2 {
-font-family: museo-sans, Roboto, "Helvetica Neue", Arial, sans-serif;
+
+#page1, #page2 {
+  color: rgba(0, 0, 0, 0.54);
 }
 /* Fin estilo página 2*/
 
@@ -95,3 +116,6 @@ li{
 }
 
 /*Fin estilo página inicio (index.html)
+
+/*Estilo página 4*/
+

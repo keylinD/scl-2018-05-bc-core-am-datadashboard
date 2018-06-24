@@ -78,7 +78,10 @@
 h1{
   text-align: center;
 }
-
+h2{
+  text-align: center;
+  color: #dc3545;
+}
 body,html{
     height: 100%;
 }

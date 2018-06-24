@@ -22,37 +22,39 @@ const renderCohorts = data => {
     })
   })
 }
-// ---Alumnas---
- fetch(userJSON)
- .then(response => response.json())
- .then(data =>{
- 	console.log(data);
- 	renderUsers(data);
- })
+// ---Alumnas--- mostrado en la lista desplegable 1!!
+ // fetch(userJSON)
+ // .then(response => response.json())
+ // .then(data =>{
+ // 	console.log(data);
+ // 	renderUsers(data);
+ // })
 
- const renderUsers = data =>{ 
- 	lista.addEventListener('click',()=>{
- 		const render = data.forEach(element =>{
- 			let option = document.createElement("option");
- 			option.text=element.name;
- 			return lista.add(option);
- 		})
- 	return render;
- 	});
- }
+ // const renderUsers = data =>{ 
+ // 	lista.addEventListener('click',()=>{
+ // 		const render = data.forEach(element =>{
+ // 			let option = document.createElement("option");
+ // 			option.text=element.name;
+ // 			return lista.add(option);
+ // 		})
+ // 	return render;
+ // 	});
+ // }
 
-// fetch(userJSON)
-// .then(response => response.json())
-// .then(data=>{
-//   console.log(data);
-//   listUsers(data);
-// })
+// -----Alumnas---- Mostrado dentro de un div en columnas
 
-// const listUsers = data => {
-//   lista.addEventListener('click' , () => {
-//     const render = data.forEach(element => {
-//       return container.innerHTML +=  `<div class="col-lg-4 col-sm-6 col-xs-12">${element.name}</div>`
-//     })
-//   })
-// }
+fetch(userJSON)
+.then(response => response.json())
+.then(data=>{
+  console.log(data);
+  listUsers(data);
+})
+
+const listUsers = data => {
+  lista.addEventListener('click' , () => {
+    const render = data.forEach(element => {
+      return container.innerHTML +=  `<div class="col-lg-4 col-sm-6 col-xs-12">${element.name}</div>`
+    })
+  })
+}
 

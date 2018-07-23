@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0">
+    <title>Data Dashboard</title>
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- link icono -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- mi estilo css -->
+    <link rel="stylesheet" href="../src/assets/css/style.css" />
+  </head>
+ 
+  <body> 
+  
+    <header>
+    <!-- logo y texto -->
+    <div class="row">
+      <div class="col-sm-3" id="logo">
+        <img src="../src/assets/img/logo.png">
+      </div>
+      <div class="col-sm-9 title">
+        <h1>Data Dashboard</h1>
+      </div>
+    </div> 
+    <!-- fin de logo y texto -->
+
+      <!-- Inicio menú -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light home">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"></a>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <i class="icon far fa-user">
+          <a class="nav-link" href="#"> Valentina Smith</a>
+        </i>
+      </li>
+      <!-- <li class="nav-item active">
+        <i class="icon fas fa-book-open">
+          <a class="nav-link " href="#">Cohorts</a>
+        </i>
+      </li> -->
+      <li class="nav-item active">
+        <i class="icon fas fa-cog">
+          <a class="nav-link " href="#">Configuación</a>
+        </i>
+      </li>
+      <li class="nav-item active">
+        <i class="icon fas fa-sign-out-alt">
+          <a class="nav-link " href="../src/subpaginas/page2.html">Cerrar Sesión</a>
+        </i>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+      <!-- fin del menú -->
+      <!-- inicio de los botones -->
+      <div class="col-9 menu">
+        <section class="form-group" id="CohortsAlum">
+          <label for="exampleFormControlSelect1">Cohorts</label>
+          <select class="form-control" id="nameCohorts">
+          <option id="optionCohorts">Cohorts</option>
+        </select>
+
+        </section>
+      <br>
+      <!-- lista despegable -->
+      <section class="form-group">
+        <label for="exampleFormControlSelect1">Listado de Alumnas</label>
+        <button class="form-control" id="nameAlumna" >
+          <!-- <option id= "optionAlumna">ALUMNAS</option> --> Alumnas
+        </button>
+        <br>
+        <div class="container">
+          <h2>Lista de Alumnas</h2>
+          <!-- <input id="searchBox" onkeyup="onSearchBoxChange()"></input> -->
+          <br>
+          <div class="row" id="list"></div>
+        </div>
+        <br>
+
+        <a type="submit" class="btn btn-primary" id="btn-buscar" href="../src/subpaginas/page4.html">BUSCAR</a>
+
+        <!-- <div class="contenedor">
+        </div><button id="toggleSort" onclick="onToggleSort()">ASC</button>
+        <input id="searchBox" onkeyup="onSearchBoxChange()"></input>
+        <div class="row" id="studentContainer"></div>
+        </div>
+      </div> -->
+</section>
+        
+      <!-- fin del col-9 -->
+    </div>
+    <!-- fin del col-3 -->
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+   <script src="../src/assets/js/main.js"></script>
+   <script src="../src/assets/js/data.js"></script>
+  </body>
+</html>

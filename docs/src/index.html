@@ -73,18 +73,26 @@
       <!-- lista despegable -->
       <section class="form-group">
         <label for="exampleFormControlSelect1">Listado de Alumnas</label>
-        <select class="form-control" id="nameAlumna" >
-          <option id= "optionAlumna">ALUMNAS</option>
-        </select>
+        <button class="form-control" id="nameAlumna" >
+          <!-- <option id= "optionAlumna">ALUMNAS</option> --> Alumnas
+        </button>
         <br>
         <div class="container">
           <h2>Lista de Alumnas</h2>
+          <!-- <input id="searchBox" onkeyup="onSearchBoxChange()"></input> -->
           <br>
           <div class="row" id="list"></div>
         </div>
         <br>
 
         <a type="submit" class="btn btn-primary" id="btn-buscar" href="../src/subpaginas/page4.html">BUSCAR</a>
+
+        <!-- <div class="contenedor">
+        </div><button id="toggleSort" onclick="onToggleSort()">ASC</button>
+        <input id="searchBox" onkeyup="onSearchBoxChange()"></input>
+        <div class="row" id="studentContainer"></div>
+        </div>
+      </div> -->
 </section>
         
       <!-- fin del col-9 -->
@@ -97,5 +105,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
    <script src="../src/assets/js/main.js"></script>
+   <script src="../src/assets/js/data.js"></script>
   </body>
 </html>

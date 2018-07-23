@@ -6,7 +6,7 @@ const container = document.getElementById('list');
 
 
 // ----Cohorts--
-fetch(userCOHORTS)
+fetch('https://keylind.github.io/scl-2018-05-bc-core-am-datadashboard/data/cohorts.json')
 .then(response => response.json())
 .then(data => {
   console.log(data);
@@ -43,7 +43,7 @@ const renderCohorts = data => {
 
 // -----Alumnas---- Mostrado dentro de un div en columnas
 
-fetch(userJSON)
+fetch('https://keylind.github.io/scl-2018-05-bc-core-am-datadashboard/data/cohorts/lim-2018-03-pre-core-pw/users.json')
 .then(response => response.json())
 .then(data=>{
   console.log(data);

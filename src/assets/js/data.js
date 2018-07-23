@@ -25,7 +25,7 @@ window.computeUsersStats = (users,progress,courses) =>{
    var globalCompletedParts = 0;
    for(var course in userProgressObj) {
      for(var unit in userProgressObj[course].units) {
-       globalTotalParts + = userProgressObj[course].units[unit].totalParts;
+       globalTotalParts += userProgressObj[course].units[unit].totalParts;
        globalCompletedParts += userProgressObj[course].units[unit].completedParts;
      }
    }
